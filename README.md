@@ -36,19 +36,23 @@ Create a new sbt project
 ## In the build.sbt
 
 ```
-name := "awsS3utils"
+name := "" //Enter the Package Name
 
 scalaVersion := "2.12.10"
 
 version := "0.1"
 
-organization := "com.bsq.fintrans"
+organization := "" //Enter the Org Name
 
 libraryDependencies ++= Seq("com.amazonaws" % "aws-java-sdk" % "1.12.37" )
 
 libraryDependencies ++= Seq("org.apache.hadoop" % "hadoop-hdfs" % "3.2.0")
 
 libraryDependencies ++= Seq("org.apache.spark" %% "spark-sql" % "3.1.2")
+
+libraryDependencies += "com.typesafe" % "config" % "1.4.1"
+
+libraryDependencies ++= Seq("org.apache.httpcomponents" % "httpclient" % "4.4")
 ```
 
 
